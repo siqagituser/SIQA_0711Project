@@ -11,34 +11,14 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.siqa_0711.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
-  packages:
-  - name: SIQA_0711Project
-    version: "1.0"
-- serviceName: project.siqa_0711.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
-  packages:
-  - name: SIQA_0711Project
-    version: "1.0"
-- serviceName: project.siqa_0711.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
-  packages:
-  - name: SIQA_0711Project
-    version: "1.0"
 - serviceName: project.siqa_0711.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_0711Project
     version: "1.0"
-- serviceName: project.siqa_0711.integrations:Sum
+- serviceName: project.siqa_0711.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:JDBCtest
   packages:
   - name: SIQA_0711Project
     version: "1.0"
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
 configurationVariables:
   jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
   ? artConnection.SIQA_0711Project.project.siqa_0711.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
